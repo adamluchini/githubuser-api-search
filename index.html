@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="build/js/vendor.min.js" type="text/javascript"></script>
+    <script src="build/js/app.js" type="text/javascript"></script>
+    <link href="build/css/vendor.css" rel="stylesheet">
+    <title>GitHub User Lookup</title>
+  </head>
+  <body>
+    <div class = "jumbotron">
+    <h1>View a GitHub User's Repositories</h1>
+    <form id="GHUserName" class="form-group">
+      <h2>Enter GitHub Username</h2><input id="GHUserNameInput" class="form-control">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <button id = "resubmitForm" type = "button" hidden onClick="window.location.reload()">Search Again</button>
+    <div id = "results" hidden>
+      <h2 id="resultName"></h2>
+      <h3 id="resultEmail"></h3>
+      <ol id="resultRepo"></ol>
+    </div>
+  </div>
+  </body>
+</html>
